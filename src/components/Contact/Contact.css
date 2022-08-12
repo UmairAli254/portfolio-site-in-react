@@ -61,14 +61,14 @@ textarea {
 }
 
 
-.c-blur1 {
+/* .c-blur1 {
     top: 10rem;
-    left: -12rem;
-}
+    left: -10rem;
+} */
 
 .c-blur2 {
-    top: 2rem;
-    /* left: 8rem !important; */
+    top: 4rem;
+    left: 29rem !important;
 }
 
 

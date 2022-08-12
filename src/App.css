@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Gumela;
+    src: url('/src/fonts/GumelaRegular.woff2') format("woff2"), url('/src/fonts/GumelaRegular.woff') format("woff");
+}
+
 :root {
     --yellow: #F5C32C;
     --orange: #FCA61F;
@@ -10,12 +15,21 @@
     --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
+* {
+    font-family: "Gumela";
+    font-weight: normal;
+    font-size: 20px;
+}
+
 .App {
     padding: 0.5rem 3.5rem;
     overflow: hidden;
     color: var(--black);
 }
 
+body {
+    margin: 0;
+}
 
 /* Global Button Style */
 .button {
@@ -39,11 +53,11 @@
 
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
     .App {
         padding: 0.5rem 1.5rem;
         overflow: hidden;
         color: var(--black);
     }
-    
+
 }

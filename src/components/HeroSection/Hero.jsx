@@ -9,9 +9,10 @@ import Crown from "../../img/crown.png";
 import GlsssesEmoji from "../../img/glassesemoji.png";
 import ThumbUp from "../../img/thumbup.png";
 import FloatingDiv from "./FloatingDiv/FloatingDiv";
+import { motion } from "framer-motion";
 
 
-
+const transition = { duration: 2, type: "spring" };
 
 function Hero() {
     return (
@@ -41,14 +42,28 @@ function Hero() {
                 <img src={BlueVector} />
                 <img src={YellowVector} />
                 <img src={Boy} />
-                <img src={GlsssesEmoji} />
 
-                <div style={{ top: "-4%", left: "68%" }} className="floatingDiv">
+                <motion.img
+                    initial={{ left: "-36%" }}
+                    whileInView={{ left: "-24%" }}
+                    transition={transition}
+                    src={GlsssesEmoji} />
+
+                <motion.div style={{ top: "-4%", left: "68%" }} className="floatingDiv"
+                    initial={{ top: "-4%", left: "74%" }}
+                    whileInView={{ left: "68%" }}
+                    transition={transition}>
+
                     <FloatingDiv Img={Crown} Text1={"Web"} Text2={"Developer"} />
-                </div>
-                <div style={{ top: "18rem", left: "0rem" }} className="floatingDiv">
+                </motion.div>
+
+                <motion.div style={{ top: "18rem", left: "0rem" }} className="floatingDiv"
+                initial={{ left: "9rem", top: "18rem" }}
+                whileInView={{ left: "0rem" }}
+                transition={transition}>
+                    
                     <FloatingDiv Img={ThumbUp} Text1={"Best Dsign"} Text2={"Reward"} />
-                </div>
+                </motion.div>
 
                 {/* Blur Div */}
                 <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

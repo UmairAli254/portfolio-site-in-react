@@ -4,6 +4,7 @@ import Facebook from "../../img/Facebook.png";
 import Fiverr from "../../img/fiverr.png";
 import UpWork from "../../img/Upwork.png";
 import Shopify from "../../img/Shopify.png";
+import { motion } from "framer-motion";
 
 export default function Work() {
     return (
@@ -13,7 +14,7 @@ export default function Work() {
                 <span>Works for all these</span>
                 <span>Brands & Clients</span>
                 <span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo sint nam quasi sit accusamus atque,<br/> minus cum quaerat architecto, veniam distinctio <br/> perferendis debitis blanditiis sed repellat quae.</span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo sint nam quasi sit accusamus atque,<br /> minus cum quaerat architecto, veniam distinctio <br /> perferendis debitis blanditiis sed repellat quae.</span>
 
                 <button className="button leftTextBtn work-leftBtn">Hire Me</button>
 
@@ -23,7 +24,11 @@ export default function Work() {
 
             {/*  */}
             <div className="rightSideWork">
-                <div className="work-main-circle">
+                <motion.div className="work-main-circle"
+                    initial={{ rotate: 45 }}
+                    whileInView={{ rotate: 0 }}
+                    viewport={{ margin: "-40px" }}
+                    transition={{ duration: 3.5, type: "spring" }}>
 
                     <div className="commonCircle">
                         <img src={UpWork} />
@@ -45,7 +50,7 @@ export default function Work() {
                         <img src={Facebook} />
                     </div>
 
-                </div>
+                </motion.div>
                 {/* Background Circles */}
                 <div className="w-backCircle blueCircle"></div>
                 <div className="w-backCircle yellowCircle"></div>

@@ -4,6 +4,10 @@ import DesignEmoji from "../../img/heartemoji.png";
 import DevelopEmoji from "../../img/glasses.png";
 import UIEmoji from "../../img/humble.png";
 import CV from "./UmairCV.pdf";
+import { motion } from "framer-motion";
+
+// transition
+const transition = { duration: 1, type: "spring" };
 
 const Services = () => {
     return (
@@ -25,36 +29,46 @@ const Services = () => {
             <div className="rightCards">
 
                 {/* First Card */}
-                <div style={{
+                <motion.div style={{
                     left: "14rem"
-                }} className="s-card1">
+                }} className="s-card1"
+                    initial={{ left: "25rem" }}
+                    whileInView={{ left: "14rem" }}
+                    transition={transition}>
                     <Card
                         Img={DesignEmoji} Heading={"Design"}
                         Detail={"This is roughing detatil from my end"}
                     />
-                </div>
+                </motion.div>
 
                 {/* Second Card */}
-                <div style={{
+                <motion.div style={{
                     top: "12rem",
                     left: "-4rem"
-                }} className="s-card2">
+                }} className="s-card2"
+                    initial={{ left: "-11rem", top: "12rem" }}
+                    whileInView={{ left: "-4rem" }}
+                    transition={transition}>
                     <Card
                         Img={DevelopEmoji} Heading={"Developer"}
                         Detail={"HTML, CSS, JavaScript, PHP, MySQL"}
                     />
-                </div>
+                </motion.div>
+
 
                 {/* Third Card */}
-                <div style={{
+                <motion.div style={{
                     top: "19rem",
                     left: "12rem"
-                }} className="s-card3">
+                }} className="s-card3"
+                    initial={{ top: "19rem", left: "25rem" }}
+                    whileInView={{ left: "12rem" }}
+                    transition={transition}>
                     <Card
                         Img={UIEmoji} Heading={"UI / UX"}
                         Detail={"Lorem Ipsum, Lorem Ipsun, Lorem Ipsum"}
                     />
-                </div>
+                </motion.div>
 
                 <div
                     className="blur"
