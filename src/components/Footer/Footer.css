@@ -1,0 +1,129 @@
+.Footer {
+    display: flex;
+    align-items: center;
+    margin: -0.5rem -3.5rem;
+    position: relative;
+    height: 10rem !important;
+    margin-top: 6rem !important;
+    user-select: none;
+}
+
+.f-content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4rem;
+    /* gap: 4rem; */
+    color: white;
+}
+
+.f-content span a {
+    text-decoration: none;
+    color: white !important;
+    font-size: 1.2rem;
+    background-color: white;
+    color: var(--orange) !important;
+    border-radius: 5px;
+    padding: 4px 10px;
+}
+
+
+.f-icons>a>img {
+    transform: scale(0.4);
+    border-radius: 11%;
+    padding: 10px;
+    background-color: white;
+}
+
+/* 
+.f-icons a {
+    text-decoration: none;
+
+} */
+
+
+
+
+/* Responsiveness */
+/* For Desktop */
+@media screen and (max-width: 669px) {
+    .f-content {
+        top: 0.3rem !important;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    .Footer {
+        height: 9rem !important;
+        margin-top: 6rem !important;
+    }
+
+    .f-content {
+        top: -0.3rem !important;
+        transform: scale(0.8);
+    }
+}
+
+
+/* For Mobile */
+@media screen and (max-width: 480px) {
+    .f-content span a {
+        text-decoration: none;
+        color: white !important;
+        font-size: 1rem;
+        background-color: white;
+        color: var(--orange) !important;
+        border-radius: 5px;
+        padding: 4px 10px;
+
+
+    }
+
+
+    .f-icons>a>img {
+        transform: scale(0.4);
+        border-radius: 11%;
+        padding: 10px;
+        background-color: white;
+        margin-top: -10px;
+        margin-bottom: -1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 401px) {
+    .Footer {
+        height: 8rem !important;
+        margin-top: 6rem !important;
+    }
+
+    .f-content {
+        top: -1rem !important;
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 348px) {
+    .Footer {
+        height: 7rem !important;
+    }
+
+    .f-content {
+        top: -1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 294px) {
+    .Footer {
+        height: 6rem !important;
+        margin-top: 6rem !important;
+    }
+
+    .f-content {
+        top: -2.3rem !important;
+        transform: scale(0.8);
+    }
+}

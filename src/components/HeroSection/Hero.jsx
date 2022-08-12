@@ -43,12 +43,13 @@ function Hero() {
                 <img src={Boy} />
                 <img src={GlsssesEmoji} />
 
-                <div style={{ top: "-4%", left: "68%" }}>
+                <div style={{ top: "-4%", left: "68%" }} className="floatingDiv">
                     <FloatingDiv Img={Crown} Text1={"Web"} Text2={"Developer"} />
                 </div>
-                <div style={{ top: "18rem", left: "0rem" }}>
+                <div style={{ top: "18rem", left: "0rem" }} className="floatingDiv">
                     <FloatingDiv Img={ThumbUp} Text1={"Best Dsign"} Text2={"Reward"} />
                 </div>
+
                 {/* Blur Div */}
                 <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
                 <div className="blur"

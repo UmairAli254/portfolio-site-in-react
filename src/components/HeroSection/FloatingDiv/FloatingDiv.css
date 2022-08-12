@@ -11,6 +11,8 @@
 
 .floating-div>img {
     transform: scale(0.4);
+    user-select: none;
+    pointer-events: none;
 }
 
 .floating-div>span {

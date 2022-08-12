@@ -27,7 +27,7 @@ const Services = () => {
                 {/* First Card */}
                 <div style={{
                     left: "14rem"
-                }}>
+                }} className="s-card1">
                     <Card
                         Img={DesignEmoji} Heading={"Design"}
                         Detail={"This is roughing detatil from my end"}
@@ -38,7 +38,7 @@ const Services = () => {
                 <div style={{
                     top: "12rem",
                     left: "-4rem"
-                }}>
+                }} className="s-card2">
                     <Card
                         Img={DevelopEmoji} Heading={"Developer"}
                         Detail={"HTML, CSS, JavaScript, PHP, MySQL"}
@@ -49,7 +49,7 @@ const Services = () => {
                 <div style={{
                     top: "19rem",
                     left: "12rem"
-                }}>
+                }} className="s-card3">
                     <Card
                         Img={UIEmoji} Heading={"UI / UX"}
                         Detail={"Lorem Ipsum, Lorem Ipsun, Lorem Ipsum"}
@@ -58,7 +58,11 @@ const Services = () => {
 
                 <div
                     className="blur"
-                    style={{ background: "var(--purple)", top: "8rem", left: "18rem" }}
+                    style={{
+                        background: "var(--purple)",
+                        top: "8rem",
+                        left: "18rem"
+                    }}
                 ></div>
             </div>
         </div>
