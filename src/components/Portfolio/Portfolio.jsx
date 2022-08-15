@@ -8,7 +8,7 @@ import MusicApp from "../../img/musicapp.png";
 
 export default function Portfolio() {
     return (
-        <div className="Portfolio-Section">
+        <div className="Portfolio-Section" id="Portfolio-Section">
 
             <span>Recent Projects</span>
             <span>Portfolio</span>

@@ -18,7 +18,7 @@ const allReviews = [
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
     {
-        name: "Miss",
+        name: "Tincti",
         img: Pic2,
         review:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
@@ -30,7 +30,7 @@ const allReviews = [
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
     {
-        name: "Shahrukh Khan",
+        name: "Mac hanry",
         img: Pic4,
         review:
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
@@ -41,7 +41,7 @@ const allReviews = [
 
 const Testimonial = () => {
     return (
-        <div className="Testimonial">
+        <div className="Testimonial" id="Testimonial">
             <div className="testi-text">Clients always get <span> Exceptional Work</span> from me...</div>
             {/* Blur Effecta */}
             <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>

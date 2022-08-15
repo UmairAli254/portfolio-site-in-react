@@ -307,17 +307,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* For Mobile */
 @media screen and (max-width: 480px) {
     .WorkSection {
@@ -396,7 +385,7 @@
 
     .Work-left-txt span:nth-of-type(3) {
         font-size: 1.35rem;
-        margin-bottom: 4rem;
+        margin-bottom: 0rem;
     }
 
 

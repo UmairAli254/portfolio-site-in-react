@@ -17,7 +17,20 @@
 .nav-left-name {
     font-size: 1.4rem;
     font-weight: bold;
+    cursor: pointer;
 }
+
+.portfolioLinkRightSide {
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.portfolioLinkRightSide:hover {
+    color: var(--orange);
+}
+
+
 
 /* Navbar Right */
 .nav-right {
@@ -36,6 +49,17 @@
     margin-right: 2rem;
     flex: 10;
     flex-wrap: wrap;
+}
+
+.nav-right-list>ul>a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.nav-right-list>ul>a:hover {
+    color: var(--orange);
 }
 
 .nav-right-list>ul>li {
@@ -70,6 +94,9 @@
         margin-right: -1.5rem !important;
     }
 
+    .portfolioLinkRightSide {
+        visibility: hidden;
+    }
 
 }
 
@@ -81,9 +108,10 @@
         flex: 1;
         margin-left: -2rem !important;
     }
-    
+
 }
-@media  screen and (max-width: 838px) {
+
+@media screen and (max-width: 838px) {
     .nav-right-list>ul {
         display: flex;
         justify-content: center;
@@ -100,12 +128,17 @@
     .nav-right-list>ul {
         display: none;
     }
+
     .nav-right-btn-div {
         display: block;
     }
 
-    .nav-right-btn{
+    .nav-right-btn {
         transform: scale(0.8);
+    }
+
+    .portfolioLinkRightSide {
+        visibility: visible;
     }
 }
 
@@ -124,7 +157,7 @@
         display: none;
     }
 
-    .nav-right-btn{
+    .nav-right-btn {
         transform: scale(0.8);
     }
 
@@ -142,7 +175,7 @@
 }
 
 @media screen and (max-width: 368px) {
-    .nav-right-btn-div{
+    .nav-right-btn-div {
         position: relative;
         left: 8rem;
         transform: scale(0.8);
@@ -160,6 +193,7 @@
         left: 6rem !important;
     }
 }
+
 @media screen and (max-width: 340px) {
     .nav-right-btn-div {
         position: relative;

@@ -11,14 +11,16 @@ const transition = { duration: 1, type: "spring" };
 
 const Services = () => {
     return (
-        <div className='ServicesDiv'>
+        <div className='ServicesDiv' id="ServicesDiv">
             {/* Left Side */}
             <div className="leftText">
 
                 <span>My Awesome</span>
                 <span>Services</span>
                 <span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo sint nam quasi sit accusamus atque, minus cum quaerat architecto, veniam distinctio perferendis debitis blanditiis sed repellat quae.</span>
+
+                    I am providing the Web Development Servies that includes, Web Apps, E-Commerce Sites, Business Websites, LMS Sites, Portfolio Sites and many more, Just hit the Contact button and let's discuss yoru project. 
+                    </span>
 
                 <a href={CV} download> <button className="button leftTextBtn">Download CV</button> </a>
 
@@ -37,7 +39,7 @@ const Services = () => {
                     transition={transition}>
                     <Card
                         Img={DesignEmoji} Heading={"Design"}
-                        Detail={"This is roughing detatil from my end"}
+                        Detail={"You will get a best design for your website"}
                     />
                 </motion.div>
 
@@ -51,7 +53,7 @@ const Services = () => {
                     transition={transition}>
                     <Card
                         Img={DevelopEmoji} Heading={"Developer"}
-                        Detail={"HTML, CSS, JavaScript, PHP, MySQL"}
+                        Detail={"HTML, CSS, JavaScript, ReactJS, PHP, MySQL, WordPress, Shopify"}
                     />
                 </motion.div>
 
@@ -66,7 +68,7 @@ const Services = () => {
                     transition={transition}>
                     <Card
                         Img={UIEmoji} Heading={"UI / UX"}
-                        Detail={"Lorem Ipsum, Lorem Ipsun, Lorem Ipsum"}
+                        Detail={"The UI / UX of your App will be very user friendly"}
                     />
                 </motion.div>
 

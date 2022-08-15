@@ -11,9 +11,9 @@ export default function Footer() {
             <div className="f-content">
                 <span><a href="linkto:BehalfUmair@Gmail.Com">BehalfUmair@Gmail.Com</a></span>
                 <div className="f-icons">
-                    <a href="#" ><img src={Github} alt="Github" /></a>
-                    <a href="#" ><img src={Linkedin} alt="Linkedin" /></a>
-                    <a href="#" ><img src={Instagram} alt="Instagram" /></a>
+                    <a href="https://github.com/UmairAli254" target="_blank"><img src={Github} alt="Github" /></a>
+                    <a href="https://www.linkedin.com/in/umair-ali-wordpress/" target="_blank"><img src={Linkedin} alt="Linkedin" /></a>
+                    <a href="https://www.instagram.com/umair_ali254" target="_blank" ><img src={Instagram} alt="Instagram" /></a>
                 </div>
             </div>
         </div >

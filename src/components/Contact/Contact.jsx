@@ -58,7 +58,7 @@ export default function Contact() {
 
 
     return (
-        <div className='Contact-Section'>
+        <div className='Contact-Section' id='Contact-Section'>
             <div className="contact-left">
                 <span>
                     Let's Start Your Project...

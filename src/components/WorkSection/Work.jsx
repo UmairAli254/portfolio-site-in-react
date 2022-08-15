@@ -4,7 +4,9 @@ import Facebook from "../../img/Facebook.png";
 import Fiverr from "../../img/fiverr.png";
 import UpWork from "../../img/Upwork.png";
 import Shopify from "../../img/Shopify.png";
+import WordPress from "../../img/wordpress.png";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 export default function Work() {
     return (
@@ -14,9 +16,15 @@ export default function Work() {
                 <span>Works for all these</span>
                 <span>Brands & Clients</span>
                 <span>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo sint nam quasi sit accusamus atque,<br /> minus cum quaerat architecto, veniam distinctio <br /> perferendis debitis blanditiis sed repellat quae.</span>
+                    I have worked on these all platforms and with dozens of clients from there. I have been doing freelancing <br /> from the last 3+ years. <br /> My clients are from around the globe and they are <br /> taking my services to make their businesses successful.
+                </span>
 
-                <button className="button leftTextBtn work-leftBtn">Hire Me</button>
+                <Link
+                    to="Contact-Section"
+                    spy={true}
+                    smooth={true}
+                    activeClass="activeClass"
+                ><button className='button leftTextBtn work-leftBtn'>Hire Me</button></Link>
 
                 <div className="blur" style={{ background: "#ABF1FF94", top: "18rem", left: "-15rem" }}></div>
             </div>
@@ -47,7 +55,7 @@ export default function Work() {
                     </div>
 
                     <div className="commonCircle">
-                        <img src={Facebook} />
+                        <img src={WordPress} />
                     </div>
 
                 </motion.div>

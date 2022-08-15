@@ -10,6 +10,7 @@ import GlsssesEmoji from "../../img/glassesemoji.png";
 import ThumbUp from "../../img/thumbup.png";
 import FloatingDiv from "./FloatingDiv/FloatingDiv";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 
 const transition = { duration: 2, type: "spring" };
@@ -23,16 +24,22 @@ function Hero() {
                     <span>Umair Ali</span>
                     <span>Full Stack Developer with high level of experience in Web Development and Designing. Producing the quality work</span>
                 </div>
-                <button className="button h-left-btn">Hire Me</button>
+                
+                <Link
+                        to="Contact-Section"
+                        spy={true}
+                        smooth={true}
+                        activeClass="activeClass"
+                    ><button className='button h-left-btn'>Hire Me</button></Link>
 
                 <div className="social-links">
-                    <a href="#" className="imgLinks">
+                    <a href="https://github.com/UmairAli254" target="_blank" className="imgLinks">
                         <img src={Github} alt="Github" />
                     </a>
-                    <a href="#" className="imgLinks">
+                    <a href="https://www.linkedin.com/in/umair-ali-wordpress/" target="_blank" className="imgLinks">
                         <img src={Linkedin} alt="Linkedin" />
                     </a>
-                    <a href="#" className="imgLinks">
+                    <a href="https://www.instagram.com/umair_ali254" target="_blank" className="imgLinks">
                         <img src={Instagram} alt="Instagram" />
                     </a>
                 </div>
